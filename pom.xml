@@ -114,6 +114,7 @@
         <module>embedding_moquette</module>
         <module>osgi_test</module>
         <module>perf</module>
+        <module>redis_storage</module>
     </modules>
 
     <reporting>
@@ -212,6 +213,15 @@
 
     <repositories>
         <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>public</id>
+            <name>Public Repositories</name>
+            <url>http://120.76.153.169:8081/repository/maven-public/</url>
+        </repository>
+
+        <repository>
             <id>Paho Releases</id>
             <url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
         </repository>
@@ -224,6 +234,14 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>Public Repositories</name>
+            <url>http://120.76.153.169:8081/repository/maven-public/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <distributionManagement>
         <repository>
